@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RD1.master.cs" Inherits="Research_Development.RD1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>R & D
+        
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/R&D.png" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <div >
+     <div class="Header">
+                 <ul>
+  <li><a class="active" href="Index.aspx">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+    </div>
+        </div>
+</head>
+    <style>
+        body{
+            background-image:url('/img/background1.jpg');
+            background-attachment: fixed;
+            background-position:center;
+            margin-top:100px;
+            width:90%;
+            background-size: cover;
+        }
+
+        .Header{
+            margin-top:-7%;
+            width:110%;
+            height:50px;
+        }
+                ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+    border-radius: 25px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color:darkred;
+}
+
+    </style>
+<body>
+    <form id="form1" runat="server">  
+        <div class="back">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>
